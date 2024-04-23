@@ -1,0 +1,17 @@
+[package]
+name = "network-mod-ticker-details-io"
+version = "0.1.0"
+edition = "2021"
+description = "Input & output module for handling network for ticker details"
+license = "MIT license"
+repository = "https://github.com/hadilq/rust-polygon-io-crawler"
+
+[dependencies]
+snp-mod-io = { path = "../../../snp-mod/io" }
+serde = { version = "1.0.197", features = ["derive", "rc"] }
+serde_json.workspace = true
+chrono.workspace = true
+thiserror.workspace = true
+async-trait.workspace =  true
+reqwest.workspace = true
+

@@ -1,0 +1,16 @@
+[package]
+name = "database-mod-ticker-details-io"
+version = "0.1.0"
+edition = "2021"
+description = "Input & output module for handling database for ticker details"
+license = "MIT license"
+repository = "https://github.com/hadilq/rust-polygon-io-crawler"
+
+[dependencies]
+snp-mod-io = { path = "../../../snp-mod/io" }
+serde = { version = "1.0.197", features = ["derive", "rc"] }
+chrono.workspace = true
+thiserror.workspace = true
+async-trait.workspace = true
+tokio-postgres.workspace = true
+

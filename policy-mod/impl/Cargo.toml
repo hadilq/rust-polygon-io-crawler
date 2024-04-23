@@ -1,0 +1,18 @@
+[package]
+name = "policy-mod-impl"
+version = "0.1.0"
+edition = "2021"
+description = "Implementation module for handling request rate"
+license = "MIT license"
+repository = "https://github.com/hadilq/rust-polygon-io-crawler"
+
+[dependencies]
+policy-mod-io = { path = "../io" }
+serde = { workspace = true, features = ["derive"] }
+thiserror.workspace = true
+chrono.workspace = true
+async-trait.workspace = true
+tokio.workspace = true
+
+[dev-dependencies]
+tokio = { workspace  = true, features = ["macros", "rt-multi-thread"] }

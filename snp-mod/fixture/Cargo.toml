@@ -1,0 +1,14 @@
+[package]
+name = "snp-mod-fixture"
+version = "0.1.0"
+edition = "2021"
+description = "Fixture module of S&P 500"
+license = "MIT license"
+repository = "https://github.com/hadilq/rust-polygon-io-crawler"
+
+[dependencies]
+snp-mod-io = { path = "../io" }
+serde = { workspace = true, features = ["derive"] }
+thiserror.workspace = true
+chrono.workspace = true
+

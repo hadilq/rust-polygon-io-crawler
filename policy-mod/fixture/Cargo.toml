@@ -1,0 +1,13 @@
+[package]
+name = "policy-mod-fixture"
+version = "0.1.0"
+edition = "2021"
+description = "Fixture module for handling request rate"
+license = "MIT license"
+repository = "https://github.com/hadilq/rust-polygon-io-crawler"
+
+[dependencies]
+policy-mod-io = { path = "../io" }
+serde = { workspace = true, features = ["derive"] }
+async-trait.workspace = true
+

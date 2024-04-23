@@ -1,0 +1,25 @@
+[package]
+name = "crawler-app"
+version = "0.1.0"
+edition = "2021"
+description = "Main module -- crawler app"
+license = "MIT license"
+repository = "https://github.com/hadilq/rust-polygon-io-crawler"
+
+[dependencies]
+snp-mod-io = { path = "../snp-mod/io" }
+snp-mod-impl = { path = "../snp-mod/impl" }
+policy-mod-io = { path = "../policy-mod/io" }
+policy-mod-impl = { path = "../policy-mod/impl" }
+network-mod-ticker-details-io = { path = "../network-mod/ticker-details/io" }
+network-mod-ticker-details-impl = { path = "../network-mod/ticker-details/impl" }
+database-mod-ticker-details-io = { path = "../database-mod/ticker-details/io" }
+database-mod-ticker-details-impl = { path = "../database-mod/ticker-details/impl" }
+crawler-mod-ticker-details-io = { path = "../crawler-mod/ticker-details/io" }
+crawler-mod-ticker-details-impl = { path = "../crawler-mod/ticker-details/impl" }
+chrono.workspace = true
+thiserror.workspace = true
+reqwest.workspace = true
+tokio = { workspace = true, features = ["macros", "rt-multi-thread"] }
+tokio-postgres = { workspace = true, features = ["with-chrono-0_4"] }
+

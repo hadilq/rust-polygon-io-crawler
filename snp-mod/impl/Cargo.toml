@@ -1,0 +1,17 @@
+[package]
+name = "snp-mod-impl"
+version = "0.1.0"
+edition = "2021"
+description = "Implementation module of S&P 500"
+license = "MIT license"
+repository = "https://github.com/hadilq/rust-polygon-io-crawler"
+
+[dependencies]
+snp-mod-io = { path = "../io" }
+serde = { workspace = true, features = ["derive"] }
+thiserror.workspace = true
+chrono.workspace = true
+
+[dev-dependencies]
+rstest.workspace = true
+
