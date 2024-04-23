@@ -64,7 +64,7 @@ Create a file named `.config.nix`, before running `shell.nix`, with the followin
 }
 ```
 
-Then you can run `shell.nix`. After that launch the [database](containers/README.md).
+Then you can run `shell.nix`. After that launch the [database](container/README.md).
 Now it's ready to run `cargo test`, and of course, `cargo run`.
 
 Enjoy!
